@@ -1,18 +1,28 @@
 import { catsData } from "./data.js"
 
 const emotionRadios = document.getElementById('emotion-radios')
-const getImageBtn = document.getElementById('get-image-btn')
 const animatedGIFsOnly = document.getElementById('gifs-only-option')
 const memeModalInner = document.getElementById('meme-modal-inner')
 const memeModal = document.getElementById('meme-modal')
-const memeModalCloseBtn = document.getElementById('meme-modal-close-btn')
-
 
 emotionRadios.addEventListener('change', highlightCheckedOption);
 
-memeModalCloseBtn.addEventListener('click', closeModal)
+// memeModalCloseBtn.addEventListener('click', closeModal);
 
-getImageBtn.addEventListener('click', renderCat);
+// getImageBtn.addEventListener('click', renderCat);
+
+document.addEventListener('click', function(e) {
+    if (e.target.id === 'get-image-btn') {
+        renderCat();
+
+    } else if (e.target.id === 'meme-modal-close-btn') {
+        closeModal();
+           
+    } else if (e.target.id !== 'meme-modal') {
+        closeModal();
+
+    }
+})
 
 function highlightCheckedOption(e) {
     const radioArray = document.getElementsByClassName('radio')
@@ -23,7 +33,7 @@ function highlightCheckedOption(e) {
 }
 
 function closeModal() {
-    memeModal.style.display = 'none'
+    memeModal.style.display = 'none'    
 }
 
 function renderCat() {
