@@ -37,14 +37,14 @@ function closeModal() {
 }
 
 function renderCat() {
-    const catObject = getSingleCatObject()
+    const catObject = getSingleCatObject()   
     memeModalInner.innerHTML = `
-            <img 
-                class="cat-img" 
-                src="./images/${catObject.image}"
-                alt="${catObject.alt}"
-            >
-        `
+        <img 
+            class='cat-img'
+            src='/images/${catObject.image}'
+            alt='${catObject.alt}'
+        />
+    `
     memeModal.style.display = 'flex'
 }
 
