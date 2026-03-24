@@ -1,6 +1,11 @@
 html, body {
     margin: 0;
     font-family: 'Karla', sans-serif;
+    background-image: url('images/Background_img.png');
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 /*typography*/
@@ -50,7 +55,7 @@ header{
     left: 10px;
     right: 10px;
     top: 20px;
-    box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.35);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
 }
 
 .header-inner{
@@ -69,7 +74,7 @@ header{
 .controls-container{
     display: flex;
     flex-direction: column;
-    width: 200px;
+    width: 300px;
     margin: 0px auto;
 }
 
@@ -78,36 +83,61 @@ header{
 .emotion-radios{
     display: flex;
     flex-direction: column;
-    border: 1px solid #bcbcbc;
-    border-radius: 5px;
+    background: #FFFFFF;
+    padding: 10px 20px;
+    border-radius: 24px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
 }
 
 .radio{
     display: flex;
     align-items: center;
-    border-bottom: 1px solid #bcbcbc;
-    padding: 4px 8px;
+    padding: 5px 8px;
+    background: #A5D6A7;
+    border-radius: 24px;
+    margin: 8px 0;
+}
+
+.radio:hover {
+    background: #FFFFFF;
+    border: 3px solid #A5D6A7;
 }
 
 label{
     font-size: 14px;
-    padding: 3px;
+    font-weight: 600;
+    padding: 4px;
     width: 100%;
     cursor: pointer;
 }
 
 .highlight{
-    background-color: #fff0ee;
-    color: #bd301d;
+    background-color: #FF9E80;
+    color: #000000;
     font-weight: bold;
 }
 
-.radio:last-child{
+/* .radio:last-child{
     border-bottom: 0;
-}
+} */
 
 input[type="radio"]{
+    -webkit-appearance: none;
+    appearance: none;
+    margin: 0;
+    background: #FFFFFF;
+    width: 1.3rem;
+    height: 1.2rem;
+    border: 2px solid #A5D6A7 ;
+    border-radius: 50%;
     cursor: pointer;
+}
+
+input[type="radio"]:checked {
+    width: 1.2rem;
+    height: 1.1rem;
+    border: none;
+    background: #F75928;
 }
 
 .gifs-check{
@@ -123,13 +153,15 @@ input[type="radio"]{
 }
 
 .get-image-btn{
-    background-color: #67595e;
-    color: #eed6d3;
+    background-color: #81783E;
+    color: #FFFFFF;
     padding: 15px 19px;
     font-size: 24px;
+    font-weight: bold;
     border: none;
-    border-radius: 5px;
+    border-radius: 50px;
     margin-bottom: 8px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
 }
 
 /* modal */
@@ -138,28 +170,32 @@ input[type="radio"]{
     display: none; /*flex when displayed*/
     position: fixed;
     margin: auto;
-    top: 80px;
+    top: 150px;
     left: 0;
     right: 0;
     align-items: center;
     justify-content: center;
-    border: 1px solid #67595e;
-    border-radius: 5px;
+    border-radius: 50px;
     width: 420px;
     height: 490px;
-    background-color: #fff0ee;
+    background-image: url('images/Modal_Bg.png');
+    background-position: center;
+    background-size: cover;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
 }
 
 .cat-img{
     max-width: 340px;
     max-height: 420px;
-    border-radius: 5px;
+    border: 8px solid #EAE3BF;
+    border-radius: 50px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
 }
 
 .meme-modal-close-btn{
     position: absolute;
-    top: 2%;
-    right: 2%;
+    top: 4%;
+    right: 6%;
     background-color: transparent;
     border: 2px solid #555;
     color: #555;
