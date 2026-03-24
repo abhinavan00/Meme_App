@@ -170,28 +170,32 @@ input[type="radio"]:checked {
     display: none; /*flex when displayed*/
     position: fixed;
     margin: auto;
-    top: 80px;
+    top: 150px;
     left: 0;
     right: 0;
     align-items: center;
     justify-content: center;
-    border: 1px solid #67595e;
-    border-radius: 5px;
+    border-radius: 50px;
     width: 420px;
     height: 490px;
-    background-color: #fff0ee;
+    background-image: url('images/Modal_Bg.png');
+    background-position: center;
+    background-size: cover;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
 }
 
 .cat-img{
     max-width: 340px;
     max-height: 420px;
-    border-radius: 5px;
+    border: 8px solid #EAE3BF;
+    border-radius: 50px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
 }
 
 .meme-modal-close-btn{
     position: absolute;
-    top: 2%;
-    right: 2%;
+    top: 4%;
+    right: 6%;
     background-color: transparent;
     border: 2px solid #555;
     color: #555;
