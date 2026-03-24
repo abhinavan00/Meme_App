@@ -1,6 +1,11 @@
 html, body {
     margin: 0;
     font-family: 'Karla', sans-serif;
+    background-image: url('images/Background_img.png');
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 /*typography*/
