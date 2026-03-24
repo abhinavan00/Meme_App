@@ -112,8 +112,8 @@ label{
 }
 
 .highlight{
-    background-color: #fff0ee;
-    color: #bd301d;
+    background-color: #FF9E80;
+    color: #000000;
     font-weight: bold;
 }
 
@@ -133,8 +133,11 @@ input[type="radio"]{
     cursor: pointer;
 }
 
-input[type="radio"]::before {
-    
+input[type="radio"]:checked {
+    width: 1.2rem;
+    height: 1.1rem;
+    border: none;
+    background: #F75928;
 }
 
 .gifs-check{
