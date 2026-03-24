@@ -10,39 +10,60 @@ h1, h2, h3{
 }
 
 h1, h2{
-    color: #EED6D3;
+    color: #FFFFFF;
     margin: 0;
 }
 
 h1{
-    font-size: 28px;
+    font-size: 42px;
 }
 
 h2 {
-    font-size: 16px;
+    font-size: 26px;
 }
 
 h3{
     margin: 25px;
+    margin-top: 150px;
+}
+
+.holmes-word {
+    font-style: italic;
+}
+
+.dots {
+    color: #FFD54F;
+}
+
+.meme-word {
+    color: #FFD54F;
+    font-style: italic;
 }
 
 /* layout */
 
 header{
-    background-color: #67595E;
+    background-color: #609762;
+    border-radius: 100px;
+    position: fixed;
+    margin: auto;
+    left: 10px;
+    right: 10px;
+    top: 20px;
+    box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.35);
 }
 
 .header-inner{
     display: flex;
     align-items: center;
     margin: 0 auto;
-    width: 370px;
+    width: 400px;
     gap: 15px;
     padding: 10px 0 0 0;
 }
 
-.pumpkin-img{
-    width: 80px;
+.spects_cat-img{
+    width: 100px;
 }
 
 .controls-container{
